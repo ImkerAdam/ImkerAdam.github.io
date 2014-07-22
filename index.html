@@ -1,4 +1,4 @@
-
+<head>
 <script src="bower_components/platform/platform.js"></script>
 
 <link rel="import"
@@ -7,13 +7,77 @@
 <link rel="import" href="core-header-panel.html">
 <body>
 
+ <style shim-shadowdom>
 
+    body {
+      font-family: sans-serif;
+    }
+
+    core-header-panel {
+      float: left;
+      width: 360px;
+      height: 400px;
+      margin: 5px;
+    }
+    
+    core-header-panel[mode=cover]::shadow #mainContainer {
+      left: 70px;
+    }
+
+    .core-header {
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      padding: 0 10px;
+      background-color: #4F7DC9;
+      color: #FFF;
+      transition: height 0.2s;
+    }
+    
+    .core-header.tall {
+      height: 180px;
+    }
+    
+    .core-header.medium-tall {
+      height: 120px;
+    }
+
+    .content {
+      height: 2000px;
+      background: linear-gradient(rgb(214, 227, 231), lightblue);
+    }
+
+  </style>
+  
+</head>
+
+<body unresolved>
 <h1>Hello World</h1>
 
-<div class="core-header animate medium-tall">
-Service AdamForster</div>
-<div>mit Github clonen und sauber installieren, polymer einbauen etc.</div>
 
-  <!-- Use element -->
+  <core-header-panel mode="waterfall-tall" tallClass="medium-tall">
+    <div class="core-header">Service AdamForster</div>
+    <div class="content">Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    </div>
+  </core-header-panel>
+  
+   <core-header-panel mode="waterfall-tall" tallClass="medium-tall">
+    <div class="core-header">Service AdamForster</div>
+    <div class="content">Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    Lorem Ipsum. Lorem Ipsum.Lorem Ipsum. Lorem Ipsum. 
+    </div>
+  </core-header-panel>
+  
 
 </body>

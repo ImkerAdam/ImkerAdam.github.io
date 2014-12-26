@@ -209,6 +209,28 @@
 
     <hr class="featurette-divider">
 
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Kontakt
+          <span class="text-muted">Wir freuen uns.</span></h2>
+          <p class="lead">
+            Ein Telefongespräch und sie wissen mehr. Ein kurzes Mail
+            und wir beantworten Ihre Fragen.  Melden Sie sich, wir freuen
+            uns von Ihnen zu hören.
+
+            Telefon: 032 682 59 74
+            <a href="" data-u="daniel data-d="adamforster.ch">Email.</a></>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/500.gif" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
     <!-- /END THE FEATURETTES -->
 
 
@@ -236,6 +258,20 @@
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  <script type="text/javascript">
+    function createLinks(){
+      $('A[data-u][href=""]').each(function(){
+        var i = $(this);
+        i.attr('href', 'mai'+'lto:'+i.data('u')+'@'+i.data('d'));
+        if (i.html()==''){ i.html(i.data('u')+'@'+i.data('d')); }
+      });
+    }
+    $(function(){
+      createLinks();
+    });
+  </script>
+
 
 </body>
 </html>

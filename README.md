@@ -1,6 +1,9 @@
 Grayscale Jekyll theme
 =========================
 
+account: I*@live.com
+
+
 Jekyll theme based on [Grayscale bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-grayscale/)
 
 ## Demo
